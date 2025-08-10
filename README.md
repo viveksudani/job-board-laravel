@@ -7,8 +7,13 @@ Job Board plateform using Laravel + Tailwind
 ```
 php artisan
 
-php artisan migarate:fresh
-php artisan migarate:rollback
+php artisan migrate:fresh
+php artisan migrate:rollback
+
+php artisan tinker
+php artisan db:seed
+php artisan db:seed  --class=JobSeeder
+php artisan migrate:fresh --seed
 
 php artisan vendor:publish
 
