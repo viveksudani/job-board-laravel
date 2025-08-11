@@ -16,6 +16,8 @@ php artisan db:seed  --class=JobSeeder
 php artisan migrate:fresh --seed
 
 php artisan vendor:publish
+php artisan make:controller
+php artisan route:list --except-vendor
 
 composer require barryvdh/laravel-debugbar --dev
 
