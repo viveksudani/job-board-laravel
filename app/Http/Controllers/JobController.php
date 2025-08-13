@@ -52,8 +52,6 @@ class JobController extends Controller
 
     public function update(Job $job)
     {
-        // authorize (Pending...)
-    
         // validate
         request()->validate([
             'title' => ['required', 'min:3'],
@@ -72,8 +70,7 @@ class JobController extends Controller
     }
 
     public function destroy(Job $job)
-    {  
-        // authorize (Pending...)
+    {
         // Delete the job
         $job->delete();
 
