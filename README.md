@@ -18,6 +18,7 @@ php artisan vendor:publish
 php artisan make:controller
 php artisan route:list --except-vendor
 php artisan make:policy
+php artisan queue:work
 
 composer require barryvdh/laravel-debugbar --dev
 
